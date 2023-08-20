@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.Admin.BatchPaymentActivity">
+
+    <include
+        android:id="@+id/appBarId"
+        layout="@layout/app_bar_layout" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tci_ImageView"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/bp_totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text=""
+                android:textColor="@color/greenDark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/bp_totalReceivedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="Total Received"
+                android:textColor="@color/greenDark"
+                android:textSize="19sp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/bp_totalDueTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="Total Due: "
+                android:textColor="@color/red"
+                android:layout_marginTop="10dp"
+                android:textSize="19sp"
+                android:textStyle="bold"
+
+                />
+            <Button
+                android:id="@+id/bp_createNewPaymentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Create new payment"
+                android:background="@drawable/green_button_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bp_allPaymentListRecyclerViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+
+        />
+
+</LinearLayout>

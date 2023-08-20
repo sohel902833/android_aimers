@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sai_attendanceStatusTvId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/greenDark"
+                    android:fontFamily="@font/aclonica"
+                    android:textSize="17sp"
+                    />
+                <TextView
+                    android:id="@+id/sai_dateTvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Roll"
+                    android:fontFamily="@font/aclonica"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="end"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/spi_absentButtonId"
+                android:layout_marginLeft="10dp"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="Make Absent"
+                android:background="@drawable/red_button_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/spi_presentButtonId"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="Make Present"
+                android:background="@drawable/green_button_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

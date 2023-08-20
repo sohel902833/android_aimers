@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/sp_nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/greenDark"
+                android:fontFamily="@font/aclonica"
+                android:textSize="18sp"
+                />
+            <TextView
+            android:id="@+id/sp_rollTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll"
+            android:fontFamily="@font/aclonica"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            />
+            <TextView
+                android:layout_marginTop="10dp"
+            android:id="@+id/sp_receivedPaymentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id: 4578"
+            android:fontFamily="@font/aclonica"
+            android:textSize="16sp"
+                android:textColor="@color/greenDark"
+            />
+            <TextView
+            android:id="@+id/sp_duePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id: 4578"
+            android:fontFamily="@font/aclonica"
+            android:textSize="16sp"
+                android:textColor="@color/red"
+            />
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

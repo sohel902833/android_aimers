@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/sb_d_titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Submit Payment"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/sp_receivedPaymentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id: 4578"
+            android:fontFamily="@font/aclonica"
+            android:textSize="16sp"
+            android:textColor="@color/greenDark"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/sp_duePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id: 4578"
+            android:fontFamily="@font/aclonica"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Amount"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <EditText
+                android:id="@+id/sb_d_amountEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:hint="Amount"
+                android:padding="15dp"
+                android:textColorHint="@color/blackAsh"
+                android:textStyle="bold"
+                android:inputType="numberDecimal"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_alignParentLeft="true"
+                android:id="@+id/cancelBatchDialogButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/blueDark"
+                android:fontFamily="@font/aclonica"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/addNewBatchButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/blueDark"
+                android:fontFamily="@font/aclonica"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

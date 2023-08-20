@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aimers">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/campas"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/campas"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollageManagementSystem"
+        tools:targetApi="31">
+        <activity
+            android:name=".Views.Admin.StudentMessageManagerAcitivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.SmsManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.TotalPaymentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.StudentPaymentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.BatchPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.AddMarkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.ResultShitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.WebHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Student.StudentAttendanceProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Student.StudentMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Teacher.StudentPresentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Teacher.StudentAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Teacher.TeacherSingleClassRoomActivitity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Teacher.TeacherMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.CreateNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.NoticeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.StudentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.BatchListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.AddNewTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.TeacherListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Admin.ClassListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Common.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Views.Admin.AdminMainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

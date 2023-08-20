@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:id="@+id/menu_homeId"
+            android:icon="@drawable/home_icon"
+            />
+
+        <item
+            android:title="Notice"
+            android:id="@+id/menu_NoticeId"
+            android:icon="@drawable/notice_board_icon"
+            />
+        <item
+            android:title="Profile"
+            android:id="@+id/menu_teacherProfileId"
+            android:icon="@drawable/student_icon"
+            />
+    </group>
+
+
+
+
+</menu>

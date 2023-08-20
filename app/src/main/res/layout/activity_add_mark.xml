@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Admin.AddMarkActivity"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/appBarId"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/appBarId"
+        android:id="@+id/totalMarkCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <EditText
+            android:id="@+id/totalMarkEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Total Mark"
+            android:padding="15dp"
+            android:inputType="number"
+            android:textColorHint="@color/blackAsh"
+            android:textStyle="bold"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/totalMarkCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="10dp"
+        android:id="@+id/studentListRecyclerViewId"
+        />
+
+
+</RelativeLayout>

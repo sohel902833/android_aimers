@@ -1,0 +1,60 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/green_button_bg.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/arrow_back.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/home_icon.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/red_button_bg.xml" value="0.179" />
+        <entry key="app/src/main/res/layout/activity_add_new_teacher.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_admin_main.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/activity_batch_list.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/activity_create_notice.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_department_list.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_notice_list.xml" value="0.36982968369829683" />
+        <entry key="app/src/main/res/layout/activity_student_attendance.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/activity_student_attendance_profile.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/activity_student_list.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/activity_student_main.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/activity_student_present_details.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/activity_teacher_list.xml" value="0.10572916666666667" />
+        <entry key="app/src/main/res/layout/activity_teacher_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_teacher_single_class_room_activitity.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/add_department_dialog.xml" value="0.315625" />
+        <entry key="app/src/main/res/layout/add_student_dialog.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/admin_dashboard_item_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/app_bar_layout.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/batch_item_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/create_batch_dialog.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/create_new_class_dialog_layout.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/custom_alert_dialog.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/department_item_layout.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/fragment_student_home.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/fragment_student_notice.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/fragment_student_profile.xml" value="0.24754168448054725" />
+        <entry key="app/src/main/res/layout/fragment_teacher_home.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/fragment_teacher_notice.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/fragment_teacher_profile.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/fragment_teacher_students.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/notice_item_layout.xml" value="0.36982968369829683" />
+        <entry key="app/src/main/res/layout/single_student_attendance_item_layout.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/spinner_item_layout.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/student_attendance_item_layout.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/student_class_item_layout.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/student_item_layout.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/layout/student_present_item_layout.xml" value="0.25908507909362977" />
+        <entry key="app/src/main/res/layout/teacher_class_item_layout.xml" value="0.2599401453612655" />
+        <entry key="app/src/main/res/layout/teacher_item_layout.xml" value="0.315625" />
+        <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.2599401453612655" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
