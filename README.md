@@ -10,6 +10,12 @@ EduManager is a comprehensive educational management application designed to str
 <img src="https://res.cloudinary.com/dqmazmcph/image/upload/v1698217356/MyProjects/AimersAndroid/kuanzo3xarpoq3xxes7t.jpg" height="400"/>
 
 
+# Technology Stack:
+- Firebase Realtime Database
+- Android Studio
+-  Sqlite
+-  Shared Preferance
+-  Java
 
 ## Key Features:
 
