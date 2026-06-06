@@ -34,8 +34,8 @@ public class LoginActivity extends AppCompatActivity {
     private AppBar appBar;
     private EditText phoneEt,passwordEt;
     private Button teacherLoginButton;
-    private static  final String ADMIN_PHONE="01740244739";
-    private static  final String ADMIN_PASSWORD="zubu";
+    private static  final String ADMIN_PHONE="01892503574";
+    private static  final String ADMIN_PASSWORD="aimers";
 
 
     //other variables

@@ -5,101 +5,161 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F5F5F5"
     tools:context=".Views.Admin.SmsManagerActivity">
+
+    <!-- App Bar -->
     <include
         layout="@layout/app_bar_layout"
-        android:id="@+id/appBarId"/>
+        android:id="@+id/appBarId" />
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Type your message"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
 
-        />
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp">
-
-        <EditText
-            android:id="@+id/messageboxEt"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="#fff"
-            android:hint="Message"
-            android:padding="15dp"
-            android:textColorHint="@color/blackAsh"
-            android:textStyle="bold"
-            />
-
-
-    </androidx.cardview.widget.CardView>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Batch: "
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="10dp"
-        />
-    <androidx.cardview.widget.CardView
-        android:layout_margin="10dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="7dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Spinner
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/batchSpinnerId"
-            />
-    </androidx.cardview.widget.CardView>
+            android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:layout_alignParentRight="true"
-            android:id="@+id/sendSmsButton"
-            android:layout_width="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@color/blueDark"
-            android:fontFamily="@font/aclonica"
-            android:text="Send"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            <!-- ── Message box ─────────────────────────────── -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type your message"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="16dp" />
 
-    </RelativeLayout>
-    <Button
-        android:layout_alignParentRight="true"
-        android:id="@+id/sendSmsSeparetly"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@color/blueDark"
-        android:fontFamily="@font/aclonica"
-        android:text="More Options"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
 
+                <EditText
+                    android:id="@+id/messageboxEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#fff"
+                    android:hint="Message"
+                    android:gravity="top|start"
+                    android:padding="15dp"
+                    android:textColorHint="@color/blackAsh"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ── Batch spinner ───────────────────────────── -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Batch"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <Spinner
+                    android:id="@+id/batchSpinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ── SIM spinner (NEW) ───────────────────────── -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select SIM"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <Spinner
+                    android:id="@+id/simSpinnerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- ── Queue status (NEW) ─────────────────────── -->
+            <!--
+                Hidden by default (View.GONE). Shown as soon as there
+                is anything in the queue.
+            -->
+            <TextView
+                android:id="@+id/queueStatusTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3F2FD"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"
+                tools:text="Queue — Pending: 3  Sent: 7  Failed: 0"
+                tools:visibility="visible" />
+
+            <!-- ── Action buttons ──────────────────────────── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/sendSmsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blueDark"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Send"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="24dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sendSmsSeparetly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@color/blueDark"
+                android:fontFamily="@font/aclonica"
+                android:text="More Options"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

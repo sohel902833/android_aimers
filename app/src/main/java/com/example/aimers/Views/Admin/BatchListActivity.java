@@ -71,7 +71,7 @@ public class BatchListActivity extends AppCompatActivity {
 
         init();
         sessionList.clear();
-        for(int i=2012; i<=2040; i++){
+        for(int i=2025; i<=2040; i++){
             sessionList.add(""+i);
         }
 

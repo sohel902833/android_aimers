@@ -1,78 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    app:cardCornerRadius="15dp"
-    android:layout_margin="10dp"
-    app:cardBackgroundColor="@color/white"
-    android:layout_height="wrap_content">
-        <LinearLayout
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:layout_marginLeft="10dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Department -->
+        <TextView
+            android:id="@+id/bi_departmentTv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/bi_departmentTv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Computer"
-                android:textStyle="bold"
-                android:textColor="@color/greenDark"
-                android:fontFamily="@font/aclonica"
-                android:textSize="20sp"
-                />
-            <TextView
-                android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Computer"
+            android:textAlignment="center"
+            android:textColor="@color/greenDark"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textSize="22sp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/greenDark" />
+
+        <!-- Phone -->
+        <TextView
             android:id="@+id/bi_groupTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phone: 01740244739"
-            android:fontFamily="@font/aclonica"
-            android:textSize="13sp"
+            android:text="📞 Phone: 01740244739"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            />
-            <TextView
-                android:textAlignment="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/aclonica" />
+
+        <!-- ID -->
+        <TextView
             android:id="@+id/bi_sessionTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Id: 4578"
-            android:fontFamily="@font/aclonica"
-            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:text="🆔 ID: 4578"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            />
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <Button
-                    android:id="@+id/bi_editButtonId"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:text="Edit"
-                    android:background="@drawable/green_button_bg"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    />
-                <Button
-                    android:id="@+id/bi_deleteButtonId"
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:text="Delete"
-                    android:background="@drawable/red_button_bg"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica" />
 
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            </LinearLayout>
+            <Button
+                android:id="@+id/bi_editButtonId"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/green_button_bg"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bi_deleteButtonId"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/red_button_bg"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
         </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.cardview.widget.CardView>
